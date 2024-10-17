@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const Welcome = () => {
@@ -7,6 +7,9 @@ const Welcome = () => {
   const handleStartScan = () => {
       navigate('/scan')
   }
+  useEffect(() => {
+    console.log("Welcome Page")
+  }, [])
   return (
     <div>
       <h1>Welcome</h1>
