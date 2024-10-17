@@ -89,7 +89,7 @@ const MyQrScanner = () => {
   }, [qrOn]);
 
   return (
-    <div className="qr-reader border-4 border-yellow-500">
+    <div className="qr-reader  rounded-3xl">
       {/* QR */}
       <video ref={videoEl}></video>
       <div ref={qrBoxEl} className="qr-box">
