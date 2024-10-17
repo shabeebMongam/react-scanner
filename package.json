@@ -1,17 +1,14 @@
 {
-  "homepage": "https://shabeebMongam.github.io/react-scanner",
   "name": "my-user-webpage",
   "private": true,
   "version": "0.0.0",
   "type": "module",
 
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist" 
   },
 
   "dependencies": {
