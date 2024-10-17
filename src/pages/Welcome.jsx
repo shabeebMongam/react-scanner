@@ -18,7 +18,7 @@ const Welcome = () => {
   return (
     <div className="flex flex-col justify-between h-full relative ">
       {/* <header className="h-[10%]"></header> */}
-      <section className="flex flex-col items-center justify-evenly h-full pb-10 px-4">
+      <section className="flex flex-col items-center justify-evenly h-full pb-10 px-4 sm:w-96 mx-auto">
         <h1 className="text-center text-3xl font-bold">
           Welcome to <br /> FUDRING
         </h1>
@@ -39,7 +39,7 @@ const Welcome = () => {
       </section>
       <footer className="h-[15%]  flex items-end">
         <div className="bg-lightBlue h-20 flex justify-center relative w-full">
-          <div className="w-20 h-20 border border-lightBlue rounded-full absolute -top-10 overflow-hidden bg-white flex justify-center items-center">
+          <div className="w-20 h-20 border border-lightBlue rounded-full absolute -top-10 overflow-hidden bg-white flex justify-center items-center" onClick={handleStartScan}>
             {/* <img src={qrCodeImage} alt="" className="scale-125" /> */}
             <LuQrCode size={60} color="#5A88FF" />
 
