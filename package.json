@@ -3,6 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://shabeebMongam.github.io/react-qr-scanner",
+
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
