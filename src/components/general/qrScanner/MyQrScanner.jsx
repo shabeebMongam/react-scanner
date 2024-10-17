@@ -46,9 +46,7 @@ const MyQrScanner = () => {
   };
 
   useEffect(() => {
-
     requestCameraAccess();
-
     if (videoEl?.current && !scanner.current) {
       // 👉 Instantiate the QR Scanner
       scanner.current = new QrScanner(videoEl?.current, onScanSuccess, {
@@ -104,7 +102,7 @@ const MyQrScanner = () => {
       </div>
 
       {/* Show Data Result if scan is success */}
-      {scannedResult && (
+      {/* {scannedResult && (
         <p
           style={{
             position: "absolute",
@@ -116,7 +114,7 @@ const MyQrScanner = () => {
         >
           Scanned Result: {scannedResult}
         </p>
-      )}
+      )} */}
     </div>
   );
 };
