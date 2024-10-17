@@ -3,7 +3,7 @@ import MyQrScanner from '../components/general/qrScanner/MyQrScanner'
 
 const ScanPage = () => {
   return (
-    <div>
+    <div className='border-black border-4 h-full w-full flex justify-center items-center'>
         <MyQrScanner/>
     </div>
   )

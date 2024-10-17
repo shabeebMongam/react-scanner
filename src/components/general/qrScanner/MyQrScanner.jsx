@@ -82,13 +82,14 @@ const MyQrScanner = () => {
   // ❌ If "camera" is not allowed in browser permissions, show an alert.
   useEffect(() => {
     if (!qrOn)
-      alert(
-        "Camera is blocked or not accessible. Please allow camera in your browser permissions and Reload."
-      );
+      // alert(
+      //   "Camera is blocked or not accessible. Please allow camera in your browser permissions and Reload."
+      // );
+      console.log("Camera is blocked or not accessible. Please allow camera in your browser permissions");
   }, [qrOn]);
 
   return (
-    <div className="qr-reader">
+    <div className="qr-reader border-4 border-yellow-500">
       {/* QR */}
       <video ref={videoEl}></video>
       <div ref={qrBoxEl} className="qr-box">
